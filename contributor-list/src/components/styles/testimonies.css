@@ -1,0 +1,39 @@
+
+.testimony-container {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    width: 900px;
+    min-height: 250px;
+    max-height: 300px;
+    background-color: #fff;
+}
+
+.testimony-image {
+    max-width: 280px;
+    margin-right: 2rem;
+    border-radius: 5px;
+    max-height: 50%;
+}
+
+.testimony-text-container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimony-name {
+    text-transform: uppercase;
+}
+
+.testimony-job {
+    color: #69a369;
+}
+
+.testimony-text {
+    color: darkgray
+}
