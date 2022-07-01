@@ -4,7 +4,7 @@ import './styles/testimonies.css'
 const Testimony = (props) => {
     return (
         <article className='testimony-container'>
-            <img className='testimony-image' src={require(`../images/pfp-${props.pic}.png`)} alt='pfp'/>
+            <img className='testimony-image' src={require(`../images/pfp-${props.pic}.png`)} alt={`${props.pic}`} />
             <section className='testimony-text-container'>
                 <h2 className='testimony-name'>{props.name}</h2>
                 <h3 className='testimony-job'>{props.job}</h3>
