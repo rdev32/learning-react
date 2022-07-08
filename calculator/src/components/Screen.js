@@ -1,8 +1,11 @@
 import React from 'react'
+import './styles/screen.css'
 
-function Screen() {
+function Screen(props) {
   return (
-    <div>Screen</div>
+    <div className='screen'>
+      {props.value}
+    </div>
   )
 }
 

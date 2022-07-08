@@ -1,0 +1,9 @@
+.screen {
+    display: flex;
+    white-space: pre-wrap;
+    justify-content: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1pt solid gray;
+}
+

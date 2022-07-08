@@ -1,0 +1,19 @@
+body {
+    background: #11111f;
+}
+
+.container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 10px;
+}

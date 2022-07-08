@@ -1,0 +1,11 @@
+.btn {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1pt solid gray;
+    user-select: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}

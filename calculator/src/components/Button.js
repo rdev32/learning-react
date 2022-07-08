@@ -1,8 +1,11 @@
 import React from 'react'
+import './styles/button.css'
 
-function Button() {
+function Button(props) {
   return (
-    <div>Button</div>
+    <div className='btn' onClick={() => props.action(props.children)}>
+      {props.children}
+    </div>
   )
 }
 
