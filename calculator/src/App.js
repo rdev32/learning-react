@@ -8,35 +8,8 @@ function App() {
 	const [screenValue, setScreenValue] = useState('0')
 	const [count, setCount] = useState(0)
 
-	useEffect(() => window.addEventListener('keydown', (e) => console.log(e.key)))
-
 	function addValue(val) {
-		(screenValue == '0') ? setScreenValue(val) : setScreenValue(screenValue + val);
-		(screenValue.includes('.')) ? setCount(parseFloat(screenValue)) : setCount(parseInt(screenValue))
-	}
-
-	function calculateInt(val, operator) {
-		if (operator == '+') return parseInt(count) + parseInt(val)
-		if (operator == '-') return parseInt(count) - parseInt(val)
-		if (operator == '*') return parseInt(count) * parseInt(val)
-		if (operator == '/') return parseInt(count) / parseInt(val)
-	}
-
-	function calculateFloat(val, operator) {
-		if (operator == '+') return parseFloat(count) + parseFloat(val)
-		if (operator == '-') return parseFloat(count) - parseFloat(val)
-		if (operator == '*') return parseFloat(count) * parseFloat(val)
-		if (operator == '/') return parseFloat(count) / parseFloat(val)
-	}
-
-	function calculate(val, operator) {
-		if (Number.isInteger()) {
-			setCount(calculateInt(val, operator))
-			setScreenValue('0')
-		} else {
-			setCount(calculateFloat(val, operator))
-			setScreenValue('0')
-		}
+		(screenValue == '0') ? setScreenValue(val) : setScreenValue(screenValue + val)
 	}
 
 	function result() {
@@ -50,24 +23,24 @@ function App() {
 				<Button action={addValue}>1</Button>
 				<Button action={addValue}>2</Button>
 				<Button action={addValue}>3</Button>
-				<Button action={calculate} value={count}>+</Button>
+				<Button type='op'>+</Button>
 
 				<Button action={addValue}>4</Button>
 				<Button action={addValue}>5</Button>
 				<Button action={addValue}>6</Button>
-				<Button action={calculate} value={count}>-</Button>
+				<Button type='op'>-</Button>
 
 				<Button action={addValue}>7</Button>
 				<Button action={addValue}>8</Button>
 				<Button action={addValue}>9</Button>
-				<Button action={calculate} value={count}>*</Button>
+				<Button type='op'>*</Button>
 
-				<Button action={result}>=</Button>
+				<Button action={result} type='other-op'>=</Button>
 				<Button action={addValue}>0</Button>
-				<Button action={addValue}>.</Button>
-				<Button action={calculate} value={count}>/</Button>
+				<Button action={addValue} type='other-op'>.</Button>
+				<Button type='op'>/</Button>
 			</div>
-			<Button action={() => setScreenValue('0')}>CLEAR</Button>
+			<Button action={() => setScreenValue('0')} type='cls'>CLEAR</Button>
 		</article>
 	)
 }

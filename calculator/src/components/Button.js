@@ -2,11 +2,10 @@ import React from 'react'
 import './styles/button.css'
 
 function Button(props) {
-  return (
-    <div className='btn' onClick={() => props.action(props.children)}>
-      {props.children}
-    </div>
-  )
+  const operatorBtn = <div className={`btn ${props.type}`} onClick={ () => props.action(props.children) } > {props.children} </div>
+  const btn = <div className='btn' onClick={ () => props.action(props.children) } > {props.children} </div>
+  
+  return (props.type) ? operatorBtn : btn
 }
 
 export default Button

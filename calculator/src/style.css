@@ -1,15 +1,21 @@
 body {
-    background: #11111f;
+    background: #505563;
 }
 
 .container {
-    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 300px;
+    padding: 20px;
     background: #ddd;
-    padding: 15px;
     border-radius: 5px;
+    box-shadow: #242c42 2px 2px;
+    border: 1pt solid #242c42;
+}
+
+.container > :first-child {
+    text-align: right;
 }
 
 .buttons-container {

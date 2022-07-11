@@ -1,9 +1,22 @@
-.screen {
+.screen { 
     display: flex;
-    white-space: pre-wrap;
-    justify-content: flex-end;
-    padding: 15px;
+    flex-flow: column nowrap;
+    padding: 10px;
     border-radius: 5px;
-    border: 1pt solid gray;
+    border: 1pt solid #242c42;
+    overflow-x: auto;
+    background: #a4f5a4;
+}
+
+.screen::-webkit-scrollbar {
+    height: 5px;
+}
+
+.screen::-webkit-scrollbar-track {
+    background-color: #a4f5a4;
+}
+
+.screen::-webkit-scrollbar-thumb {
+    background: #242c42;
 }
 

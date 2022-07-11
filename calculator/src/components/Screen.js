@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './styles/screen.css'
 
-function Screen(props) {
+const Screen = (props) => {
+
+  const moveToRight = useRef(null)
+  
+  useEffect(() => {
+    moveToRight.current.scrollIntoView({ behavior: 'smooth' })
+  })
+
   return (
-    <div className='screen'>
+    <div className='screen' ref={moveToRight}>
       {props.value}
     </div>
   )

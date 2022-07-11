@@ -2,10 +2,28 @@
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    border: 1pt solid gray;
+    background: #bebdbd;
+    border: 1pt solid #242c42;
     user-select: none;
+    box-shadow: #242c42 1px 1px;
+}
+
+.op {
+    background: #ebc765;
+}
+
+.cls {
+    background: #f36d6d;
+}
+
+.other-op {
+    background: #96cfd6;
 }
 
 .btn:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+}
+
+.btn:active {
+    box-shadow: #242c42 .5px .5px;
 }
