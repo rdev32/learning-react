@@ -1,11 +1,19 @@
 import React from 'react'
 import './styles/button.css'
 
-function Button(props) {
-  const operatorBtn = <div className={`btn ${props.type}`} onClick={ () => props.action(props.children) } > {props.children} </div>
-  const btn = <div className='btn' onClick={ () => props.action(props.children) } > {props.children} </div>
-  
-  return (props.type) ? operatorBtn : btn
+const Button = (props) => {
+
+    function isOperator(value) {
+        return isNaN(value) && (value != '.') && (value != '=')
+    }
+
+  return (
+    <button 
+    className={`btn ${isOperator(props.children) ? 'op' : null}`}
+    onClick={() => props.handleClick(props.children)} >
+        {props.children}
+    </button>
+  )
 }
 
-export default Button
+export default Button   

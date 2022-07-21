@@ -1,21 +1,22 @@
 body {
-    background: #505563;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: #6e6e6e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 300px;
-    padding: 20px;
+    width: 400px;
+    padding: 2rem;
     background: #ddd;
     border-radius: 5px;
-    box-shadow: #242c42 2px 2px;
-    border: 1pt solid #242c42;
-}
-
-.container > :first-child {
-    text-align: right;
+    border: 3pt solid #333;
 }
 
 .buttons-container {

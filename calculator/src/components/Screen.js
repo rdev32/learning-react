@@ -1,17 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import './styles/screen.css'
 
-const Screen = (props) => {
+//TODO: Refresh the screen to the right if overflows
 
-  const moveToRight = useRef(null)
-  
-  useEffect(() => {
-    moveToRight.current.scrollIntoView({ behavior: 'smooth' })
-  })
-
+const Screen = ({ input }) => {
   return (
-    <div className='screen' ref={moveToRight}>
-      {props.value}
+    <div className='screen'>
+        {input}
     </div>
   )
 }

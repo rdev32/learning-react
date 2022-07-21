@@ -1,11 +1,13 @@
 .btn {
     text-align: center;
+    font-size: larger;
     padding: 15px;
     border-radius: 5px;
-    background: #bebdbd;
-    border: 1pt solid #242c42;
+    background: #c0c0c0;
+    border: .5px solid #555;
     user-select: none;
-    box-shadow: #242c42 1px 1px;
+    box-shadow: #3b3b3b 2px 2px;
+    cursor: pointer;
 }
 
 .op {
@@ -16,14 +18,10 @@
     background: #f36d6d;
 }
 
-.other-op {
-    background: #96cfd6;
-}
-
 .btn:hover {
     opacity: 0.8;
 }
 
 .btn:active {
-    box-shadow: #242c42 .5px .5px;
+    box-shadow: #444444 -1px -1px;
 }
