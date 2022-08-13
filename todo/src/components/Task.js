@@ -1,11 +1,16 @@
 import React from 'react'
-import './styles/btn.css'
+import { AiOutlineCloseCircle } from 'react-icons/ai'
+import './styles/task.css'
 
-const Task = ({ text, completed }) => {
+const Task = ({ id, text, completed, completeTask, delTask }) => {
   return (
-    <div className={completed ? 'task-item done' : 'task-item'}>
-        <p className={completed ? 'content done' : 'content'}>{ text }</p>
-        <span className='ico'>&#10006;</span>
+    <div className={completed ? 'item done' : 'item'}>
+        <p className='content' onClick={() => completeTask(id)}>
+          { text }
+        </p>
+        <span className='icon' onClick={() => delTask(id)}>
+          <AiOutlineCloseCircle />
+        </span>
     </div>
   )
 }

@@ -7,59 +7,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
-}
-
-.container {
-    margin: 20px 0;
-    min-width: 400px;
-    min-height: 300px;
+    justify-content: center;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.form {
-    width: 100%;
-    min-height: 50px;
-    display: flex;
-    border: 1px solid gray;
-    gap: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.input {
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    flex: 4;
-}
-
-.btn-input {
-    background: #4089ce;
-    color: #fff;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.btn-input:hover {
-    background: #4099d1;
-}
-
-.task-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }

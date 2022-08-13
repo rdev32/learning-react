@@ -1,22 +1,14 @@
 import React from 'react'
-import Task from './components/Task'
-import TaskSubmit from './components/TaskSubmit'
+import TaskList from './components/TaskList'
 import './style.css'
 
 const App = () => {
-
   return (
-    <div className='container'>
-      <TaskSubmit />
-      <div className='task-list'>
-        <Task text={'task'} completed/>
-        <Task text={'task'} />
-        <Task text={'task'} />
-        <Task text={'task'} />
-      </div>
-
-    </div>
+    <>
+      <TaskList />
+    </>
   )
 }
+
 
 export default App

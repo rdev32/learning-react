@@ -1,0 +1,36 @@
+.icon {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 8;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    padding: 8px 16px;
+}
+
+.done {
+    background: #34a534;
+    text-decoration: line-through;
+}
+
+.done:hover {
+    background: #40be40;
+}
