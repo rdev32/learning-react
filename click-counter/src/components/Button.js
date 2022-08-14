@@ -1,29 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
+import './styles/button.css'
 
-const Button = ({color, label, isclicked}) => {
-
-    const [btnColour, setBtnColour] = useState(`dark${color}`)
-
-    const style = {
-        padding: '5px',
-        fontSize: '1.5em',
-        borderRadius: '10px',
-        border: '2pt solid #ddd',
-        background: btnColour,
-        textAlign: 'center',
-        userSelect: 'none',
-        width: '100%'
+class Button extends React.Component {
+    render() {
+        return (
+            <button className={this.props.isResetBtn ? 'reset' : 'click'} 
+                onClick={this.props.handleClick}>
+                { this.props.label }
+            </button>
+        )
     }
-
-
-    return (
-        <span style={style} 
-        onMouseEnter={() => setBtnColour(color)} 
-        onMouseLeave={() => setBtnColour(`dark${color}`)} 
-        onClick={isclicked}>
-            { label }
-        </span>
-    )
 }
 
 export default Button

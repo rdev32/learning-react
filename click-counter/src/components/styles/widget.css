@@ -1,31 +1,26 @@
-.widget {
-    width: 230px;;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 2em;
-}
-
 .box {
     width: 100%;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
-    border-radius: 10px;
-    border: 2pt solid #ddd;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+
+.box:hover {
+    background: #ddd;
+    color: #0a0c14;
 }
 
 .options {
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .count {
+    width: 100%;
     font-size: 5em;
 }

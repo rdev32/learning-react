@@ -1,0 +1,26 @@
+button {
+    flex: 1;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.click {
+    background: #35a551;
+}
+
+.click:hover {
+    background: #42d366;
+}
+
+.reset {
+    background: #bb1b1b;
+}
+
+.reset:hover {
+    background: #ff5252;
+}
